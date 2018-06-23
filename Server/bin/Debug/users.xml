@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<users>
+  <user>
+    <email>neo1110111@gmail.com</email>
+    <login>admin</login>
+    <password>haru</password>
+    <accent>Lime</accent>
+    <theme>BaseLight</theme>
+    <message_notifications>False</message_notifications>
+    <pmessage_notifications>True</pmessage_notifications>
+    <connect_notifications>False</connect_notifications>
+  </user>
+  <user>
+    <email>natsuki-bot@rambler.ru</email>
+    <login>Kuroneko</login>
+    <password>ruri</password>
+    <accent>Purple</accent>
+    <theme>BaseLight</theme>
+    <message_notifications>False</message_notifications>
+    <pmessage_notifications>True</pmessage_notifications>
+    <connect_notifications>False</connect_notifications>
+  </user>
+  <user>
+    <email>romam2002@mail.ru</email>
+    <login>Sairenji</login>
+    <password>kiritorito</password>
+    <accent>Blue</accent>
+    <theme>BaseLight</theme>
+    <message_notifications>True</message_notifications>
+    <pmessage_notifications>True</pmessage_notifications>
+    <connect_notifications>True</connect_notifications>
+  </user>
+</users>

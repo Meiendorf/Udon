@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Server.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Theme" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BaseDark</Value>
+    </Setting>
+    <Setting Name="Accent" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Blue</Value>
+    </Setting>
+    <Setting Name="AllowMessageNotifications" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AllowPMessageNotifications" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AllowConnectNotifications" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

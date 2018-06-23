@@ -1,0 +1,87 @@
+﻿<Controls:MetroWindow x:Class="Server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Server"
+        mc:Ignorable="d"
+        Title="Udon" Height="350" Width="532" Icon="Limewire.png" Loaded="MetroWindow_Loaded"  KeyDown="MetroWindow_KeyDown" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="135*"/>
+            <ColumnDefinition Width="271*"/>
+            <ColumnDefinition Width="111*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="27"/>
+            <RowDefinition Height="270*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="27"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Онлайн" Margin="0" Grid.Row="1">
+            <ListBox Name="Users_box">
+                <ListBox.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Показать экран" Click="ScreenShare_click"/>
+                        <MenuItem Header="Приватный чат" Click="PChat_click"/>
+                    </ContextMenu>
+                </ListBox.ContextMenu>
+            </ListBox>
+        </GroupBox>
+        <GroupBox Grid.Column="1" Header="Общий чат" Margin="0" Grid.Row="1" Grid.ColumnSpan="2">
+            <ListBox Name="Chat_box">
+            </ListBox>
+        </GroupBox>
+        <TextBox Name="Msg_box" Grid.Row="2" TextWrapping="Wrap" Grid.ColumnSpan="2"/>
+        <Button Name="Send_but"  Content="Отправить" Grid.Column="2" Grid.Row="2" Click="Send_but_Click"/>
+        <Menu Grid.ColumnSpan="3">
+            <MenuItem Header="Настройки" MinWidth="71" FontFamily="Calibri Light" FontSize="14">
+                <MenuItem Header="Тема">
+                    <MenuItem Header="Тёмная" Click="Theme_Click"/>
+                    <MenuItem Header="Светлая" Click="Theme_Click"/>
+                </MenuItem>
+                <MenuItem Header="Цвет">
+                    <MenuItem Header="Красный" Click="Accent_Click"/>
+                    <MenuItem Header="Зелёный" Click="Accent_Click"/>
+                    <MenuItem Header="Синий" Click="Accent_Click"/>
+                    <MenuItem Header="Фиолетовый" Click="Accent_Click"/>
+                    <MenuItem Header="Оранжевый" Click="Accent_Click"/>
+                    <MenuItem Header="Лаймовый" Click="Accent_Click"/>
+                    <MenuItem Header="Изумрудный" Click="Accent_Click"/>
+                    <MenuItem Header="Циан" Click="Accent_Click"/>
+                    <MenuItem Header="Кобальт" Click="Accent_Click"/>
+                    <MenuItem Header="Индиго" Click="Accent_Click"/>
+                    <MenuItem Header="Лиловый" Click="Accent_Click"/>
+                    <MenuItem Header="Розовый" Click="Accent_Click"/>
+                    <MenuItem Header="Пурпурный" Click="Accent_Click"/>
+                    <MenuItem Header="Малиновый" Click="Accent_Click"/>
+                    <MenuItem Header="Янтарный" Click="Accent_Click"/>
+                    <MenuItem Header="Жёлтый" Click="Accent_Click"/>
+                    <MenuItem Header="Коричневый" Click="Accent_Click"/>
+                    <MenuItem Header="Оливковый" Click="Accent_Click"/>
+                    <MenuItem Header="Сталь" Click="Accent_Click"/>
+                    <MenuItem Header="Серый" Click="Accent_Click"/>
+                    <MenuItem Header="Охра" Click="Accent_Click"/>
+                </MenuItem>
+                <MenuItem Header="Уведомления">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Controls:ToggleSwitch Grid.Row="0" Name="Msg_toggle" Header="Обычные сообщения" Checked="ToggleSwitch_Checked" Unchecked="ToggleSwitch_Unchecked"/>
+                        <Controls:ToggleSwitch Grid.Row="1" Name="PMsg_toggle" Header="Приватные сообщения" Checked="ToggleSwitch_Checked" Unchecked="ToggleSwitch_Unchecked"/>
+                        <Controls:ToggleSwitch Grid.Row="2" Name="Connect_toggle" Header="Подключения" Checked="ToggleSwitch_Checked" Unchecked="ToggleSwitch_Unchecked"/>
+                    </Grid>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <StatusBar Grid.Row="3" Grid.ColumnSpan="3">
+            <StatusBarItem HorizontalAlignment="Right">
+                <ResizeGrip/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Controls:MetroWindow>

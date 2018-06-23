@@ -1,0 +1,32 @@
+﻿<Controls:MetroWindow x:Class="Server.PChat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Server"
+        Closing="Window_Closing"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        KeyDown="Window_KeyDown"
+        Icon="Limewire.png"
+        mc:Ignorable="d"
+        Title="Private chat - 127.0.0.1" Height="484.592" Width="390.472" WindowStartupLocation="CenterScreen" MinWidth="390" MinHeight="490">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="96*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="36"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="Box_mess" Height="Auto" Grid.Row="1" TextWrapping="Wrap" Margin="0,1,0,1" VerticalContentAlignment="Center"/>
+        <Button Name ="Send_but" Content="Отправить" Grid.Column="1" Grid.Row="1" Height="Auto" Margin="0,1,0,0" Click="Send_but_Click"/>
+        <ListBox Name="List_mess" Grid.Row="0" Grid.ColumnSpan="2"/>
+        <StatusBar Name="PChat_status" Grid.Row="3" Grid.ColumnSpan="2">
+            <StatusBarItem HorizontalAlignment="Right">
+                <ResizeGrip></ResizeGrip>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Controls:MetroWindow>
